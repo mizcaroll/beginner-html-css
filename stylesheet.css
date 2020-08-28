@@ -1,0 +1,217 @@
+/* note that in css, the # symbol is the id selector while . (period) is the class selecor. the type selector does not need a symbol before it. for example for html tags like body, h1, a, h2 etc */ 
+/* note also that in css you can stlye multiple selectors. you just need to separate them using commas. for example 
+h1, .button, #theform { } 
+For more info on selectors (decentant and child) see Youtube Video number 48 & 49 - css tuitorials for beginners */
+
+body {
+background-color: darksalmon;
+color: magenta;
+font-size: 17px; 
+text-align: left;
+}
+a:link {
+  color: blue;
+  }
+  a:visited {
+  color: none;
+  }
+  a:hover {
+  color: orange;
+  }
+a {
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times,serif;
+  background-color: beige;
+  display: block;
+  width: 170px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  }
+.testdiv {
+border: 1px solid black;
+padding: 10px;
+width: 150px;
+float: left;
+height: 50px;
+text-align: left;
+margin: 10px 10px;
+background-color: pink;
+border-radius: 5px;
+}
+ol {
+color: maroon;
+line-height: 1.5em;
+}
+/* list-style property can be used to remove bullets etc*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+color: darkblue;
+text-decoration: underline;
+text-align: center;
+}
+h2 {
+text-decoration: none;
+font-family: Georgia, 'Times New Roman', Times,serif;
+}
+.green {
+color: green;
+}
+.button {
+  background-color: orange;
+  border-radius: 15px;
+  color: white; 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: 0.2s;
+  /* position: absolute;
+  top: 270px; 
+  left: 200px; */
+
+}
+.button:hover {
+background-color: violet;
+color: black;
+}
+/* nb for images and texts to be aligned perfectly using floats and margins they need to be in the same div */
+.catbio {
+background-color: beige;
+color: white;
+padding: 20px;
+border-color: black;
+border-width: none;
+border-style: none;
+line-height: 1.5em;
+margin-bottom: 20px;
+background-image: url(orangeback.jpeg);
+}
+.catbio2 {
+background-color: beige;
+padding: 20px;
+border-color: black;
+border-width: 2px;
+border-style: solid;
+line-height: 1.5em;
+overflow: scroll;
+height: 80px;
+}
+.highlight {
+  background-color: yellow;
+}
+.smallimage {
+display:block;
+margin-left: auto;
+margin-right: auto;
+padding: 3px;
+border-color: black;
+border-width: 2px;
+border-style: solid;
+background-color: silver;
+border-radius: 30px;
+}
+.largeimage {
+display:block;
+margin-left: auto;
+margin-right: auto;
+padding: 3px;
+border-color: black;
+border-width: 2px;
+border-style: solid;
+background-color: silver;
+border-radius: 50px;
+}
+#theform {
+  color: black;
+  display: table;
+  padding: 20px;
+  background-color: beige;
+  border: solid 1px brown;
+}
+/* below is the code for dividing the form into rows. The labels and input boxes are first styled into rows, and then into individual cells, so that they align neatly on the form*/
+/* NB WHEN YOU USE THE TABLE-ROW PROPERTY, YOU AUTOMATICALLY CREATE COLUMNS. */
+.row {
+  display: table-row;
+}
+.row label {
+  display: table-cell;
+  padding: 2px;
+  text-align: right;
+}
+.row input {
+  display: table-cell;
+  padding: 2px;
+}
+#box1 {
+  width: 300px;
+  height: 200px;
+  float: left;
+  padding: 15px;
+  margin: 10px;
+  background-color: green;
+}
+#box2 {
+  width: 300px;
+  height: 200px;
+  float: left;
+  padding: 15px;
+  margin: 10px;
+  background-color: red;
+  opacity: 0.5;
+}
+#box2:hover {
+  opacity: 1.0;
+}
+#box3 {
+  width: 800px;
+  height: 200px;
+  float: left;
+  padding: 15px;
+  margin: 10px;
+  background: yellow;
+  background: linear-gradient(blue, magenta);
+  /* if you wanted to change direction of the linear-gradient, the syntax would look like bagckground: linear-gradient(to right, blue, magenta); Also, at angles, 'to top right' 'to bottom left' etc */
+}
+#box4 {
+  width: 300px;
+  height: 200px;
+  float: left;
+  padding: 15px;
+  margin: 10px;
+  background-color: beige;
+  box-shadow: 20px 20px 5px maroon;
+}
+/* box-shadow syntax after colon: horizontalpx verticalpx blurpx shadowcolor; */
+#box5 {
+  width: 500px;
+  height: 200px;
+  float: left;
+  padding: 15px;
+  margin: 10px;
+  background-color: beige;
+  box-shadow: inset 0px 0px 20px maroon;
+}
+.linkbox {
+  background-color: teal;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 85%;
+  padding: 10px;
+  margin: 30px;
+  width: 280px;
+  color: white;
+}
+.test {
+  display: block;
+  text-align: center;
+}
+/* note for inner shadow/inner glow specs you don't specify the horizontal and vertical values. Also has the word 'inset' in the syntax. */
